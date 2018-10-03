@@ -1,0 +1,44 @@
+   
+		<!-- Start Main Navigation -->
+        <div class="header-container" id="masthead">
+            <header class="wrapper clearfix">
+            	<a href="{{site.baseurl}}/" class="logo"><!-- <img src="img/neependra-logo.png" alt="Logo" /> --> <h1>{{site.title}}</h1></a>
+                <nav id="nav-wrap">
+                		<ul class="nav" id="nav">
+                    	<li><a {% if page.url == '/' %}class="active"{% endif %} href="{{site.baseurl}}/">Home</a></li>
+                        <li class="nav-parent"><a {% if page.url == '/about/' %}class="active"{% endif %} href="{{site.baseurl}}/about/">About</a>
+                        	<ul>
+                        		<li><a href="styles.html">Styles</a></li>
+                        		<li><a href="404.html">404 Page</a></li>
+                        		<li><a href="results.html">Search Results</a></li>
+                        	</ul>	
+                        </li>
+                        <li><a {% if page.url == '/gallery/' %}class="active"{% endif %}  href="{{site.baseurl}}/gallery/">Gallery</a></li>
+                        
+                        <li class="nav-parent"><a {% if page.url == '/blog/' %}class="active"{% endif %} href="{{site.baseurl}}/blog/">Blog</a>
+                        	<ul>
+                        		<li><a href="blog-full.html">Full Width</a></li>
+                        		<li><a href="blog.html">Full Width Neat</a></li>
+                        		<li><a href="blog-side.html">With Sidebar</a></li>
+                        		<li><a href="post.html">Single Post</a></li>
+                        	</ul>	
+                        </li>
+                        <li class="last"><a {% if page.url == '/contact/' %}class="active"{% endif %} href="{{site.baseurl}}/contact/">Contact</a></li>
+                    </ul>                	
+                </nav>
+            </header>
+            
+            
+            <!-- Start Masthead -->
+            <div class="wrapper clearfix">
+            	<div class="cta two-third">
+            		<h1>You Idiots!</h1> 
+            		<h3>These are not them! You’ve captured their stunt doubles!</h3>
+            		<h5>— Spaceballs</h5>
+            		<br/>
+            		<p>No more boring V-Cards, Selfy is the perfect theme for self promotion. A little piece of the internet all about you, customise and self express with Selfy...  <a href="styles.html">Read More</a></p>
+            	</div>   	   
+            </div>
+        </div>
+        
+        

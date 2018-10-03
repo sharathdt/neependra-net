@@ -1,0 +1,10 @@
+url: 
+title: Neependra
+description: Just another WordPress site
+
+
+include:
+    - _pages
+
+sass:
+    style: compressed

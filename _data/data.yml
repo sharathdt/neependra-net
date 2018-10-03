@@ -1,0 +1,16 @@
+menus:
+    - title: Home
+      link: /
+
+    - title: About
+      link: /about/
+      
+    - title: Gallery
+      link: /gallery/
+      
+    - title: Blog
+      link: /blog/
+      
+    - title: Contact
+      link: /contact/
+    

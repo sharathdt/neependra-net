@@ -66,7 +66,7 @@ strong, b, .lead, .main table th, blockquote, .more, .cta a, .tweet, ul.paginati
 	/* max-width: 131px; */ /* Update width to suite your own logo size */
 }
 .logo-foot{
-	max-width: 45px; /* Update width to suite your own logo size */
+	max-width: 100px; /* Update width to suite your own logo size */
 }
 
 
@@ -878,6 +878,10 @@ footer .wrapper{
 .logo-foot{
 	display: inline-block;
 	padding-right: 5px;
+	
+	h6 {
+		margin: 0;
+	}
 }
 ul.social-link li:before{
 	display: none;

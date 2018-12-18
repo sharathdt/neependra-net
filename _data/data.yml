@@ -1,7 +1,6 @@
 menus:
     - title: Home
       link: /
-
     - title: About
       link: /about/
       
@@ -14,3 +13,8 @@ menus:
     - title: Contact
       link: /contact/
     
+social:
+  facebook: https://www.facebook.com/neependra.khare
+  twitter: https://twitter.com/neependra
+  linkedin: https://www.linkedin.com/in/neependra
+  rss: http://neependra.net/feed.xml

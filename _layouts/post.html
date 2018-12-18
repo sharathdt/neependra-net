@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+
+		 <!-- Start Main Body -->
+        <div class="main-container" id="main-sec">
+            <div class="main wrapper clearfix">
+            	
+            	            	
+            	<!-- Start Main Content -->
+                <div class="main-content">
+                	<div class="clearfix">
+                		<h2>{{page.title}}</h2>
+                		<h6 class="meta">Posted on {{"now" | date: '%b %d, %Y'}}</h6>
+                		{{content}}
+                		
+                		
+                		
+                		<!-- Start Paging -->
+                		<div class="clearfix">
+                			<ul class="paging">
+                			{% if page.previous.url %}
+                				<li class="left"><a href="{{page.previous.url}}"><span>S</span> Prev</a></li>
+                			{% endif %}
+                			{% if page.next.url %}
+                				<li class="right"><a href="{{page.next.url}}">Next <span>s</span></a></li>
+                			{% endif %}
+                			</ul>
+                		</div>
+                		
+                		
+                		<hr/>
+                		
+                		
+						<h2>Archive</h2>
+						{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
+						{% for yearMonth in postsByYearMonth %}
+						<h3>{{ yearMonth.name }}</h3>
+						<ul>
+						{% for post in yearMonth.items %}
+						<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+						</ul>
+						{% endfor %}
+                		
+                		<!-- Start Comments -->
+                		                		
+                		<hr/>
+                		
+                		
+                		<!-- Start Form -->
+                		
+                		
+                		
+                			
+                			                                   
+					<!-- Finish Main Content -->
+                	</div>    
+                </div>
+				
+				
+				 <!-- Start Main Sidebar -->
+				<aside class="right-aside">
+				    <h2>Recent Posts</h2>
+				    <ul>
+				    {% for post in site.posts limit: 5 %}
+				    	{% if page.url != post.url %}
+				    		<li><a href="{{post.url}}">{{post.title}}</a></li>
+				    	{% endif%}
+				    {% endfor %}
+				    </ul>
+				   
+				   <hr class="dots"/> 
+				   
+				   
+				   <h2>Archive</h2>
+				   <ul class="archive">
+				   	<li><a href="post.html">Jan 2012</a></li>
+				   	<li><a href="post.html">Dec 2012</a></li>
+				   	<li><a href="post.html">Nov 2012</a></li>
+				   	<li><a href="post.html">Oct 2012</a></li>
+				   	<li><a href="post.html">Sept 2012</a></li>
+				   	<li><a href="post.html">Aug 2012</a></li>   
+				   </ul>
+				   
+				   
+				   <hr class="dots"/>
+				   
+				   
+				   <h2>Tweets</h2>
+				   <div class="tweet">
+				   	<p>Commodo vivamus sagittis lacus vel augue laore sagittis lacus vel augue laoreet rutrum. Aenean eu leo quam. <a>#followSelfy </a> <a>@make-lemonade</a></p>
+				   	</p>
+				   	<h6 class="meta">Posted on 13 April 2013</h6>
+				   </div>
+				    
+				    	
+				</aside>
+				
+				
+
+        	</div> <!-- #main -->
+        </div> <!-- #main-container -->
+

@@ -4,20 +4,31 @@
 			<div class="main wrapper clearfix">
 				<div class="foot right">
 				<ul class="social-link">
-					<li><a href="#">d</a></li>
-					<li><a href="#">e</a></li>
-					<li><a href="#">f</a></li>
-					<li><a href="#">h</a></li>
-					<li><a href="#">1</a></li>
-					<li><a href="#">i</a></li>
-					<li><a href="#">r</a></li>
-					<li><a href="#">t</a></li>
+					
+					
+					{% if site.data.data.social.facebook %}
+					<li><a href="{{site.data.data.social.facebook}}">f</a></li>
+					{% endif %}
+					
+					<!-- <li><a href="#">h</a></li> -->
+					{% if site.data.data.social.twitter %}
+					<li><a href="{{site.data.data.social.twitter}}">t</a></li>
+					{% endif %}
+					
+					{% if site.data.data.social.linkedin %}
+					<li><a href="{{site.data.data.social.linkedin}}">i</a></li>
+					{% endif %}
+					
+					{% if site.data.data.social.rss %}
+					<li><a href="{{site.data.data.social.rss}}">r</a></li>
+					{% endif %}
+
 				</ul>
 				</div>	
 				
 				<div class="foot left">
-					<a href="index.html" class="logo-foot"><img src="img/logo-foot@2x.png" alt="logo" /></a>
-					© Copyright Selfy 2013
+					<a href="{{site.baseurl}}/" class="logo-foot"><h6>Neependra</h6></a>
+					© Copyright {{ "now" | date: '%Y' }}
 				</div>	
 			</div>
 		</footer>

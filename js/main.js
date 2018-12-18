@@ -1,8 +1,10 @@
+---
+---
 $(document).ready(function() {
 
 
   // Responsive Menu.js
-  	$('#nav-wrap').prepend('<div id="menu-icon"><span><img src="img/hamburger@2x.png"/></span>Menu</div>');
+  	$('#nav-wrap').prepend('<div id="menu-icon"><span><img src="{{site.baseurl}}/img/hamburger@2x.png"/></span>Menu</div>');
   	$("#menu-icon").on("click", function(){
   		$("#nav").slideToggle();
   		$(this).toggleClass("active");
@@ -35,7 +37,7 @@ $(document).ready(function() {
   
   
   // BackStretch.js	 
-	 $("#masthead").backstretch("img/masthead@2x.jpg");
+	 $("#masthead").backstretch("{{site.baseurl}}/img/masthead@2x.jpg");
 	 
 	 
 	 
